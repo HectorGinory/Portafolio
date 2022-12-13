@@ -1,0 +1,63 @@
+.text-about {
+    width: 600px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-about h2 {
+    color: var(--third-color-green);
+}
+
+.text-about p {
+    color: var(--first-color-white);
+    margin: 10px 0px 0px;
+}
+
+.text-about .btn {
+    margin: 30px 0px 0px;
+}
+
+.img-about {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+    animation: imgchange 20s infinite;
+    border: 3px solid var(--third-color-green);
+}
+
+@keyframes imgchange {
+    0% {
+        background: url('../sources/img/JS.png');
+        background-size: 200px;
+    }
+    14.28% {
+        background: url('../sources/img/CSS.png');
+        background-size: 200px;
+    }   
+    28.56% {
+        background: url('../sources/img/DOM.png');
+        background-size: 200px;
+    }
+    42.85% {
+        background: url('../sources/img/HTML.png');
+        background-size: 200px;
+    }   
+    57.13% {
+        background: url('../sources/img/NODE.png');
+        background-size: 200px;
+    }   
+    71.41% {
+        background: url('../sources/img/SQL.png');
+        background-size: 200px;
+    }   
+    85.69% {
+        background: url('../sources/img/REACT.png');
+        background-size: 200px;
+    }   
+    100% {
+        background: url('../sources/img/JS.png');
+        background-size: 200px;
+    } 
+}

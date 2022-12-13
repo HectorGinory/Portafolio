@@ -1,0 +1,32 @@
+.card {
+    width: 30%;
+    height: 80%;
+    border: 4px solid var(--third-color-green);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(45deg,rgba(50, 226, 187, 0.200), rgba(101, 192, 142, 0.200), rgba(123, 207, 158, 0.205), rgba(101, 192, 142, 0.288),rgba(50, 240, 200, 0.200));
+    gap: 2%;
+    filter: blur(5px);
+    transition: .3s;
+    color: var(--third-color-green);
+}
+
+.card:hover {
+    filter: blur(0px);
+    border: 4px solid var(--fourth-color-green);
+    box-shadow: 0px 0px 10px var(--fourth-color-green);
+}
+
+.card .title {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .description {
+    width: 70%;
+    text-align: justify;
+}
