@@ -6,9 +6,9 @@
     left: 0px;
     background: url('../sources/img/background.png');
     filter: invert(.3);
-    opacity: .2;
+    opacity: .15;
     z-index: -10;
-    animation: background 10s linear infinite;
+    animation: background 20s linear infinite;
 }
 
 @keyframes background {

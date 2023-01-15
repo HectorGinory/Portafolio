@@ -6,7 +6,7 @@
     z-index: 2;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 0px 0px var(--third-color);
-    backdrop-filter: blur(5px) invert(.02);
+    backdrop-filter: blur(7px);
     opacity: .9;
     display: flex;
     align-items: center;
@@ -171,41 +171,41 @@ transition: .5s;
     box-shadow: 0px 0px 10px var(--third-color);
     opacity: 1;
 }
-.social-nav .social-list ul {
+.social-nav ul {
     list-style: none;
     color: var(--fourth-color);
     display: flex;
     flex-direction: column;
 }
 
-.social-nav:hover .social-list ul {
+.social-nav:hover ul {
     list-style: none;
     display: flex;
     flex-direction: column;
 }
 
-.social-nav .social-list ul li {
+.social-nav ul li {
     margin: 15px 0px;
     transition: .5s;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.social-nav .social-list ul li:hover {
+.social-nav ul li:hover {
     margin: 10px 0px 20px;
 }
 
-.social-nav .social-list ul li a {
+.social-nav ul li a {
     color: var(--fourth-color);
 }
-.social-nav:hover .social-list ul li a {
+.social-nav:hover ul li a {
     color: var(--third-color);
 }
-.social-nav .social-list ul li:hover a{
+.social-nav ul li:hover a{
     color: var(--fourth-color);
 }
 
-.social-nav .social-list ul li .line {
+.social-nav ul li .line {
     height: 80px;
     width: 2px;
     background: var(--fourth-color);
@@ -213,10 +213,10 @@ transition: .5s;
 
 transition: .5s;
 }
-.social-nav .social-list ul .line-li:hover {
+.social-nav ul .line-li:hover {
     margin: 15px 0px;
 }
-.social-nav:hover  .social-list ul li .line {
+.social-nav:hover  ul li .line {
     background: var(--third-color);
 }
 
@@ -293,7 +293,7 @@ transition: .5s;
     background: var(--third-color);
 }
 
-@media (max-width:850px) {
+@media (max-width:900px) {
     .social-nav {
         width: 0px;
         overflow: hidden;
@@ -337,13 +337,13 @@ transition: .5s;
         height: 300px;
         padding: 10px 10px;
         top: 70px;
-        background: var(--second-color);
+        background: var(--first-color);
         border: 1px solid var(--third-color);
-        border-top: 0px solid transparent;
         right: 0;
         backdrop-filter: blur(10px);
         border-radius: 0px 0px 20px 20px;
     }
+
 
     .menu-nav:hover .menu .menu-items li button {
         margin-right: 0px;
