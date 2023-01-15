@@ -1,0 +1,351 @@
+.menu-nav {
+    position: fixed;
+    color: var(--third-color);
+    width: 100vw;
+    height: 70px;
+    z-index: 2;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 0px var(--third-color);
+    backdrop-filter: blur(5px) invert(.02);
+    opacity: .9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-nav:hover {
+    border-bottom: 1px solid var(--third-color);
+    background: var(--first-color);
+    box-shadow: 0px 0px 10px var(--third-color);
+    opacity: 1;
+    transition: .5s;
+}
+
+.menu-nav .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: .3;
+}
+.menu-nav:hover .menu {
+    opacity: 1;
+}
+
+.menu-nav .icon img {
+    height: 40px;
+    margin-left: 20px;
+    transition: .5s;
+    margin-right: 2px;
+    opacity: .3;
+}
+.menu-nav:hover .icon img {
+    opacity: 1;
+}
+.menu-nav .menu .menu-btn {
+    width: 0px;
+    height: 70px;
+    background: transparent;
+    border: 0px;
+    border-left: 0px solid var(--third-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    overflow: hidden;
+}
+.menu-nav .menu .menu-btn .line-button {
+    width: 30px;
+    height: 1px;
+    background: var(--third-color);
+    transition: .5s;
+}
+.menu-nav .menu:hover .menu-btn .line-button:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute;
+}
+.menu-nav .menu:hover .menu-btn .line-button:nth-child(2) {
+    opacity: 0;
+    position: absolute;
+}
+.menu-nav .menu:hover .menu-btn .line-button:nth-child(3) {
+    transform: rotate(-45deg);
+    position: absolute;
+}
+
+.menu-nav .menu .menu-items {
+    gap: 30px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.menu-nav .menu .menu-items li a {
+    
+transition: .5s;
+    font-size: 16px;
+    color: var(--fourth-color);
+    font-family: 'Source Sans Pro', sans-serif; 
+}
+.menu-nav:hover .menu .menu-items li a {
+    color: var(--third-color);
+}
+.menu-nav .menu .menu-items li .menu-link::after {
+    content: '';
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    display: block;
+    width: 0px;
+    height: 1px;
+    background: var(--fourth-color);
+    
+transition: .5s;
+}
+.menu-nav .menu .menu-items li:hover a {
+    color: var(--fourth-color);
+}
+.menu-nav .menu .menu-items li:hover .menu-link::after {
+    content: '';
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--fourth-color);
+}
+.menu-nav .menu .menu-items li button {
+    margin-right: 10px;
+width: 120px;
+height: 40px;
+border-radius: 5px;
+color: var(--fourth-color);
+border: 2px solid var(--fourth-color);
+background: rgba(255, 255, 255, 0.150);
+
+
+transition: .5s;
+}
+.menu-nav:hover .menu .menu-items li button {
+    width: 120px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid var(--third-color);
+    border-radius: 5px;
+    color: var(--third-color);
+    margin: 10px 0px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.menu-nav .menu .menu-items li button:hover {
+    color: var(--fourth-color);
+    border: 2px solid var(--fourth-color);
+    background: rgba(255, 255, 255, 0.150);
+}
+
+/* Designs of social media menu*/
+.social-nav {
+    top: 70px;
+    position: fixed;
+    left: 0px;
+    width: 80px;
+    height: calc(100vh - 70px);
+    color: var(--third-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 1;
+    box-shadow: 0px 0px 10px #07070710;
+    list-style: none;
+    backdrop-filter: blur(1px);
+    border-right: 1px solid white;
+    
+
+transition: .5s;
+    opacity: .3;
+}
+
+.social-nav:hover {
+    border-right: 1px solid var(--third-color);
+    box-shadow: 0px 0px 10px var(--third-color);
+    opacity: 1;
+}
+.social-nav .social-list ul {
+    list-style: none;
+    color: var(--fourth-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.social-nav:hover .social-list ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-nav .social-list ul li {
+    margin: 15px 0px;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-nav .social-list ul li:hover {
+    margin: 10px 0px 20px;
+}
+
+.social-nav .social-list ul li a {
+    color: var(--fourth-color);
+}
+.social-nav:hover .social-list ul li a {
+    color: var(--third-color);
+}
+.social-nav .social-list ul li:hover a{
+    color: var(--fourth-color);
+}
+
+.social-nav .social-list ul li .line {
+    height: 80px;
+    width: 2px;
+    background: var(--fourth-color);
+    
+
+transition: .5s;
+}
+.social-nav .social-list ul .line-li:hover {
+    margin: 15px 0px;
+}
+.social-nav:hover  .social-list ul li .line {
+    background: var(--third-color);
+}
+
+.email-nav {
+    top: 70px;
+    position: fixed;
+    right: 0px;
+    width: 80px;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 1;
+    border-left: 1px solid white;
+    box-shadow: 0px 0px 10px #07070710;
+    list-style: none;
+    color: var(--fourth-color);
+    
+
+transition: .5s;
+    backdrop-filter: blur(1px);
+    opacity: .3;
+}
+.email-nav:hover {
+    color: var(--third-color);
+    border-left: 1px solid var(--third-color);
+    box-shadow: 0px 0px 10px var(--third-color);
+    opacity: 1;
+}
+.email-nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+}
+
+.email-nav ul li {
+    margin: 15px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-nav ul li a {
+    color: var(--fourth-color);
+    
+
+transition: .5s;
+}
+.email-nav:hover ul li a {
+    color: var(--third-color);
+}
+.email-nav ul li a:hover {
+    color: var(--fourth-color);
+}
+.email-nav ul li a span {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-family: 'Source Sans Pro', sans-serif; 
+}
+
+.email-nav ul li .line {
+    height: 80px;
+    width: 2px;
+    background: var(--fourth-color);
+    
+
+transition: .5s;
+}
+
+.email-nav:hover ul li .line {
+    background: var(--third-color);
+}
+
+@media (max-width:850px) {
+    .social-nav {
+        width: 0px;
+        overflow: hidden;
+        border-right: 0px;
+    }
+
+    .email-nav {
+        width: 0px;
+        overflow: hidden;
+        border-left: 0px;
+    }
+}
+
+
+@media (min-width:750px) {
+    .menu-nav .menu .menu-btn .line-button {
+        width: 0px;
+        height: 0px;
+    }
+}
+@media (max-width:750px) {
+    .menu-nav .menu .menu-btn {
+        width: 70px;
+        border-left: 1px solid var(--third-color);
+    }
+
+    .menu-nav .menu .menu-items {
+        width: auto;
+        height: 0px;
+        overflow: hidden;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        transition: .4s;
+        top: 70px;
+        right: 0;
+        z-index: 0;
+    }
+
+    .menu-nav .menu:hover .menu-items {
+        height: 300px;
+        padding: 10px 10px;
+        top: 70px;
+        background: var(--second-color);
+        border: 1px solid var(--third-color);
+        border-top: 0px solid transparent;
+        right: 0;
+        backdrop-filter: blur(10px);
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .menu-nav:hover .menu .menu-items li button {
+        margin-right: 0px;
+    }
+}
